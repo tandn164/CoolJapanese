@@ -1,0 +1,790 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24D77056ED54770F7DE7953D /* Pods_CoolJapanese.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D7CA78816CC9A3DDFF40AA /* Pods_CoolJapanese.framework */; };
+		4D44E2BD24629DEB0073192A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D44E2BC24629DEB0073192A /* AppDelegate.swift */; };
+		4D44E2BF24629DEB0073192A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D44E2BE24629DEB0073192A /* SceneDelegate.swift */; };
+		4D44E2C124629DEB0073192A /* HomePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D44E2C024629DEB0073192A /* HomePageController.swift */; };
+		4D44E2C424629DEB0073192A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D44E2C224629DEB0073192A /* Main.storyboard */; };
+		4D44E2C624629DED0073192A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D44E2C524629DED0073192A /* Assets.xcassets */; };
+		4D44E2C924629DED0073192A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D44E2C724629DED0073192A /* LaunchScreen.storyboard */; };
+		4D44E2D92462B7770073192A /* LeftSearchTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D44E2D82462B7770073192A /* LeftSearchTextFieldView.swift */; };
+		4D44E31D2462C3B80073192A /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D44E31C2462C3B80073192A /* SearchTextField.swift */; };
+		4D44E31F2462CEF90073192A /* PopupMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D44E31E2462CEF90073192A /* PopupMenu.swift */; };
+		4D61D92D2465377B00948D0C /* FlashcardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D61D92B2465377B00948D0C /* FlashcardCell.swift */; };
+		4D61D92E2465377B00948D0C /* FlashcardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D61D92C2465377B00948D0C /* FlashcardCell.xib */; };
+		4D7043312463C5CD00DACEBC /* AddKanjiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7043302463C5CD00DACEBC /* AddKanjiController.swift */; };
+		4D7043362463CA2600DACEBC /* TopKanjiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7043352463CA2600DACEBC /* TopKanjiViewController.swift */; };
+		4D7043382463CA3400DACEBC /* MyFlashcardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7043372463CA3400DACEBC /* MyFlashcardViewController.swift */; };
+		4D70433A2463CA4500DACEBC /* ProcessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7043392463CA4500DACEBC /* ProcessViewController.swift */; };
+		4D70433D2463CB1700DACEBC /* ColorSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D70433C2463CB1700DACEBC /* ColorSet.swift */; };
+		4D7043582463D71400DACEBC /* ZinniaCocoaTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D70434C2463D6A000DACEBC /* ZinniaCocoaTouch.framework */; };
+		4D70435A2463D74400DACEBC /* ZinniaCocoaTouch.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D70434C2463D6A000DACEBC /* ZinniaCocoaTouch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4D7043632463D95D00DACEBC /* DrawableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7043612463D95D00DACEBC /* DrawableView.swift */; };
+		4D7043642463D95D00DACEBC /* HandwritingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7043622463D95D00DACEBC /* HandwritingCollectionViewCell.swift */; };
+		4D7043662463D97900DACEBC /* HandwritingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7043652463D97900DACEBC /* HandwritingViewModel.swift */; };
+		4D70436D2463E7AC00DACEBC /* AddKanjiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D70436C2463E7AC00DACEBC /* AddKanjiTextField.swift */; };
+		4D70436F2463EB4700DACEBC /* TextFieldBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D70436E2463EB4700DACEBC /* TextFieldBackground.swift */; };
+		4D7043712463ED9F00DACEBC /* WordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7043702463ED9F00DACEBC /* WordView.swift */; };
+		4D7043732463F30300DACEBC /* AddWordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7043722463F30300DACEBC /* AddWordButton.swift */; };
+		4D7043752463FDAA00DACEBC /* FlashcardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7043742463FDAA00DACEBC /* FlashcardListView.swift */; };
+		4D704379246405C300DACEBC /* FlashcardTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D704377246405C300DACEBC /* FlashcardTableCell.swift */; };
+		4D70437A246405C300DACEBC /* FlashcardTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D704378246405C300DACEBC /* FlashcardTableCell.xib */; };
+		4D70437C246408CD00DACEBC /* Flashcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D70437B246408CD00DACEBC /* Flashcard.swift */; };
+		4D70437E24640DD700DACEBC /* CellLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D70437D24640DD600DACEBC /* CellLabelView.swift */; };
+		4DA01A2D24673CAE004D15FE /* IdentForControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA01A2C24673CAE004D15FE /* IdentForControllers.swift */; };
+		4DF65BD0246A3659005F23A1 /* FlashcardWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF65BCF246A3659005F23A1 /* FlashcardWordView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4D70434B2463D6A000DACEBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D7043432463D6A000DACEBC /* ZinniaCocoaTouch.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B72741D41AA5643900914B7C;
+			remoteInfo = ZinniaCocoaTouch;
+		};
+		4D70434D2463D6A000DACEBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D7043432463D6A000DACEBC /* ZinniaCocoaTouch.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B72741DF1AA5643900914B7C;
+			remoteInfo = ZinniaCocoaTouchTests;
+		};
+		4D70434F2463D6A000DACEBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D7043432463D6A000DACEBC /* ZinniaCocoaTouch.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B725FBD01B05BD76002AAB18;
+			remoteInfo = ZinniaCocoa;
+		};
+		4D7043512463D6A000DACEBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D7043432463D6A000DACEBC /* ZinniaCocoaTouch.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B725FBDA1B05BD76002AAB18;
+			remoteInfo = ZinniaCocoaTests;
+		};
+		4D7043532463D6A000DACEBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D7043432463D6A000DACEBC /* ZinniaCocoaTouch.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5A94D6551F8E17E000234437;
+			remoteInfo = ZinniaCocoaWatch;
+		};
+		4D7043552463D6FE00DACEBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D7043432463D6A000DACEBC /* ZinniaCocoaTouch.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B72741D31AA5643900914B7C;
+			remoteInfo = ZinniaCocoaTouch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4D7043592463D73800DACEBC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4D70435A2463D74400DACEBC /* ZinniaCocoaTouch.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4D44E2B924629DEB0073192A /* CoolJapanese.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolJapanese.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D44E2BC24629DEB0073192A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4D44E2BE24629DEB0073192A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4D44E2C024629DEB0073192A /* HomePageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageController.swift; sourceTree = "<group>"; };
+		4D44E2C324629DEB0073192A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4D44E2C524629DED0073192A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4D44E2C824629DED0073192A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4D44E2CA24629DED0073192A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D44E2D82462B7770073192A /* LeftSearchTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSearchTextFieldView.swift; sourceTree = "<group>"; };
+		4D44E31C2462C3B80073192A /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
+		4D44E31E2462CEF90073192A /* PopupMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupMenu.swift; sourceTree = "<group>"; };
+		4D61D92B2465377B00948D0C /* FlashcardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardCell.swift; sourceTree = "<group>"; };
+		4D61D92C2465377B00948D0C /* FlashcardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlashcardCell.xib; sourceTree = "<group>"; };
+		4D7043302463C5CD00DACEBC /* AddKanjiController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddKanjiController.swift; sourceTree = "<group>"; };
+		4D7043352463CA2600DACEBC /* TopKanjiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopKanjiViewController.swift; sourceTree = "<group>"; };
+		4D7043372463CA3400DACEBC /* MyFlashcardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFlashcardViewController.swift; sourceTree = "<group>"; };
+		4D7043392463CA4500DACEBC /* ProcessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessViewController.swift; sourceTree = "<group>"; };
+		4D70433C2463CB1700DACEBC /* ColorSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSet.swift; sourceTree = "<group>"; };
+		4D7043432463D6A000DACEBC /* ZinniaCocoaTouch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ZinniaCocoaTouch.xcodeproj; path = "iOS-Zinnia-Japanese-Handwriting-Input-master/ZinniaCocoaTouch.xcodeproj"; sourceTree = "<group>"; };
+		4D70435F2463D7F900DACEBC /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		4D7043612463D95D00DACEBC /* DrawableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawableView.swift; sourceTree = "<group>"; };
+		4D7043622463D95D00DACEBC /* HandwritingCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandwritingCollectionViewCell.swift; sourceTree = "<group>"; };
+		4D7043652463D97900DACEBC /* HandwritingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandwritingViewModel.swift; sourceTree = "<group>"; };
+		4D70436C2463E7AC00DACEBC /* AddKanjiTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddKanjiTextField.swift; sourceTree = "<group>"; };
+		4D70436E2463EB4700DACEBC /* TextFieldBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldBackground.swift; sourceTree = "<group>"; };
+		4D7043702463ED9F00DACEBC /* WordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordView.swift; sourceTree = "<group>"; };
+		4D7043722463F30300DACEBC /* AddWordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWordButton.swift; sourceTree = "<group>"; };
+		4D7043742463FDAA00DACEBC /* FlashcardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardListView.swift; sourceTree = "<group>"; };
+		4D704377246405C300DACEBC /* FlashcardTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardTableCell.swift; sourceTree = "<group>"; };
+		4D704378246405C300DACEBC /* FlashcardTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlashcardTableCell.xib; sourceTree = "<group>"; };
+		4D70437B246408CD00DACEBC /* Flashcard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flashcard.swift; sourceTree = "<group>"; };
+		4D70437D24640DD600DACEBC /* CellLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellLabelView.swift; sourceTree = "<group>"; };
+		4DA01A2C24673CAE004D15FE /* IdentForControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentForControllers.swift; sourceTree = "<group>"; };
+		4DF65BCF246A3659005F23A1 /* FlashcardWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardWordView.swift; sourceTree = "<group>"; };
+		9160E27AFC36959C04D2F7C2 /* Pods-CoolJapanese.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoolJapanese.release.xcconfig"; path = "Target Support Files/Pods-CoolJapanese/Pods-CoolJapanese.release.xcconfig"; sourceTree = "<group>"; };
+		BDD305EE2C1FE641C959AF90 /* Pods-CoolJapanese.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoolJapanese.debug.xcconfig"; path = "Target Support Files/Pods-CoolJapanese/Pods-CoolJapanese.debug.xcconfig"; sourceTree = "<group>"; };
+		D9D7CA78816CC9A3DDFF40AA /* Pods_CoolJapanese.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoolJapanese.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D44E2B624629DEB0073192A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D7043582463D71400DACEBC /* ZinniaCocoaTouch.framework in Frameworks */,
+				24D77056ED54770F7DE7953D /* Pods_CoolJapanese.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D44E2B024629DEB0073192A = {
+			isa = PBXGroup;
+			children = (
+				4D70435B2463D79400DACEBC /* Supporting Files */,
+				4D7043432463D6A000DACEBC /* ZinniaCocoaTouch.xcodeproj */,
+				4D44E2BB24629DEB0073192A /* CoolJapanese */,
+				4D44E2BA24629DEB0073192A /* Products */,
+				4D7043572463D71400DACEBC /* Frameworks */,
+				B622D227BCC065E5F9AC56CE /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		4D44E2BA24629DEB0073192A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D44E2B924629DEB0073192A /* CoolJapanese.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4D44E2BB24629DEB0073192A /* CoolJapanese */ = {
+			isa = PBXGroup;
+			children = (
+				4D70433B2463CB0600DACEBC /* Utilities */,
+				4D44E2D52462A4F10073192A /* Model */,
+				4D44E2D32462A4950073192A /* View */,
+				4D44E2D42462A4AB0073192A /* Controller */,
+				4D44E2C524629DED0073192A /* Assets.xcassets */,
+				4D44E2CA24629DED0073192A /* Info.plist */,
+			);
+			path = CoolJapanese;
+			sourceTree = "<group>";
+		};
+		4D44E2D024629DF60073192A /* SubView */ = {
+			isa = PBXGroup;
+			children = (
+				4D61D9262465375400948D0C /* ForMyFlashcard */,
+				4D70436B2463E73900DACEBC /* ForAddKanji */,
+				4D70436A2463E68500DACEBC /* ForHomePage */,
+			);
+			path = SubView;
+			sourceTree = "<group>";
+		};
+		4D44E2D32462A4950073192A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4D7043692463E35A00DACEBC /* DrawTableView */,
+				4D44E2C724629DED0073192A /* LaunchScreen.storyboard */,
+				4D44E2C224629DEB0073192A /* Main.storyboard */,
+				4D44E2D024629DF60073192A /* SubView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4D44E2D42462A4AB0073192A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4D7043322463C9F000DACEBC /* TopKanji */,
+				4D70432F2463C58D00DACEBC /* AddNewKanji */,
+				4D7043332463C9F700DACEBC /* MyFlashcard */,
+				4D7043342463CA0100DACEBC /* LearningProcess */,
+				4D44E2D72462A5AB0073192A /* AppLifeCycle */,
+				4D44E2D62462A50B0073192A /* HomePage */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4D44E2D52462A4F10073192A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4D7043652463D97900DACEBC /* HandwritingViewModel.swift */,
+				4D70437B246408CD00DACEBC /* Flashcard.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4D44E2D62462A50B0073192A /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				4D44E2C024629DEB0073192A /* HomePageController.swift */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		4D44E2D72462A5AB0073192A /* AppLifeCycle */ = {
+			isa = PBXGroup;
+			children = (
+				4D44E2BC24629DEB0073192A /* AppDelegate.swift */,
+				4D44E2BE24629DEB0073192A /* SceneDelegate.swift */,
+			);
+			path = AppLifeCycle;
+			sourceTree = "<group>";
+		};
+		4D61D9262465375400948D0C /* ForMyFlashcard */ = {
+			isa = PBXGroup;
+			children = (
+				4DF65BCA246A3627005F23A1 /* FlashcardCell */,
+				4DF65BCF246A3659005F23A1 /* FlashcardWordView.swift */,
+			);
+			path = ForMyFlashcard;
+			sourceTree = "<group>";
+		};
+		4D70432F2463C58D00DACEBC /* AddNewKanji */ = {
+			isa = PBXGroup;
+			children = (
+				4D7043302463C5CD00DACEBC /* AddKanjiController.swift */,
+			);
+			path = AddNewKanji;
+			sourceTree = "<group>";
+		};
+		4D7043322463C9F000DACEBC /* TopKanji */ = {
+			isa = PBXGroup;
+			children = (
+				4D7043352463CA2600DACEBC /* TopKanjiViewController.swift */,
+			);
+			path = TopKanji;
+			sourceTree = "<group>";
+		};
+		4D7043332463C9F700DACEBC /* MyFlashcard */ = {
+			isa = PBXGroup;
+			children = (
+				4D7043372463CA3400DACEBC /* MyFlashcardViewController.swift */,
+			);
+			path = MyFlashcard;
+			sourceTree = "<group>";
+		};
+		4D7043342463CA0100DACEBC /* LearningProcess */ = {
+			isa = PBXGroup;
+			children = (
+				4D7043392463CA4500DACEBC /* ProcessViewController.swift */,
+			);
+			path = LearningProcess;
+			sourceTree = "<group>";
+		};
+		4D70433B2463CB0600DACEBC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4D70433C2463CB1700DACEBC /* ColorSet.swift */,
+				4DA01A2C24673CAE004D15FE /* IdentForControllers.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		4D7043442463D6A000DACEBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D70434C2463D6A000DACEBC /* ZinniaCocoaTouch.framework */,
+				4D70434E2463D6A000DACEBC /* ZinniaCocoaTouchTests.xctest */,
+				4D7043502463D6A000DACEBC /* ZinniaCocoa.framework */,
+				4D7043522463D6A000DACEBC /* ZinniaCocoaTests.xctest */,
+				4D7043542463D6A000DACEBC /* ZinniaCocoaWatch.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4D7043572463D71400DACEBC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9D7CA78816CC9A3DDFF40AA /* Pods_CoolJapanese.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4D70435B2463D79400DACEBC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4D70435F2463D7F900DACEBC /* Bridging-Header.h */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4D7043692463E35A00DACEBC /* DrawTableView */ = {
+			isa = PBXGroup;
+			children = (
+				4D7043612463D95D00DACEBC /* DrawableView.swift */,
+				4D7043622463D95D00DACEBC /* HandwritingCollectionViewCell.swift */,
+			);
+			path = DrawTableView;
+			sourceTree = "<group>";
+		};
+		4D70436A2463E68500DACEBC /* ForHomePage */ = {
+			isa = PBXGroup;
+			children = (
+				4D44E2D82462B7770073192A /* LeftSearchTextFieldView.swift */,
+				4D44E31C2462C3B80073192A /* SearchTextField.swift */,
+				4D44E31E2462CEF90073192A /* PopupMenu.swift */,
+			);
+			path = ForHomePage;
+			sourceTree = "<group>";
+		};
+		4D70436B2463E73900DACEBC /* ForAddKanji */ = {
+			isa = PBXGroup;
+			children = (
+				4D7043762464057500DACEBC /* FlashcardTableCell */,
+				4D70436C2463E7AC00DACEBC /* AddKanjiTextField.swift */,
+				4D70436E2463EB4700DACEBC /* TextFieldBackground.swift */,
+				4D7043702463ED9F00DACEBC /* WordView.swift */,
+				4D7043722463F30300DACEBC /* AddWordButton.swift */,
+				4D7043742463FDAA00DACEBC /* FlashcardListView.swift */,
+			);
+			path = ForAddKanji;
+			sourceTree = "<group>";
+		};
+		4D7043762464057500DACEBC /* FlashcardTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				4D704377246405C300DACEBC /* FlashcardTableCell.swift */,
+				4D704378246405C300DACEBC /* FlashcardTableCell.xib */,
+				4D70437D24640DD600DACEBC /* CellLabelView.swift */,
+			);
+			path = FlashcardTableCell;
+			sourceTree = "<group>";
+		};
+		4DF65BCA246A3627005F23A1 /* FlashcardCell */ = {
+			isa = PBXGroup;
+			children = (
+				4D61D92B2465377B00948D0C /* FlashcardCell.swift */,
+				4D61D92C2465377B00948D0C /* FlashcardCell.xib */,
+			);
+			path = FlashcardCell;
+			sourceTree = "<group>";
+		};
+		B622D227BCC065E5F9AC56CE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BDD305EE2C1FE641C959AF90 /* Pods-CoolJapanese.debug.xcconfig */,
+				9160E27AFC36959C04D2F7C2 /* Pods-CoolJapanese.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4D44E2B824629DEB0073192A /* CoolJapanese */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D44E2CD24629DED0073192A /* Build configuration list for PBXNativeTarget "CoolJapanese" */;
+			buildPhases = (
+				939C336661A8404380486960 /* [CP] Check Pods Manifest.lock */,
+				4D44E2B524629DEB0073192A /* Sources */,
+				4D44E2B624629DEB0073192A /* Frameworks */,
+				4D44E2B724629DEB0073192A /* Resources */,
+				4D7043592463D73800DACEBC /* CopyFiles */,
+				8063DDD671C3C452C30B1F1A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D7043562463D6FE00DACEBC /* PBXTargetDependency */,
+			);
+			name = CoolJapanese;
+			productName = CoolJapanese;
+			productReference = 4D44E2B924629DEB0073192A /* CoolJapanese.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4D44E2B124629DEB0073192A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Nguyễn Đức Tân";
+				TargetAttributes = {
+					4D44E2B824629DEB0073192A = {
+						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
+					};
+				};
+			};
+			buildConfigurationList = 4D44E2B424629DEB0073192A /* Build configuration list for PBXProject "CoolJapanese" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4D44E2B024629DEB0073192A;
+			productRefGroup = 4D44E2BA24629DEB0073192A /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4D7043442463D6A000DACEBC /* Products */;
+					ProjectRef = 4D7043432463D6A000DACEBC /* ZinniaCocoaTouch.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				4D44E2B824629DEB0073192A /* CoolJapanese */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4D70434C2463D6A000DACEBC /* ZinniaCocoaTouch.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ZinniaCocoaTouch.framework;
+			remoteRef = 4D70434B2463D6A000DACEBC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4D70434E2463D6A000DACEBC /* ZinniaCocoaTouchTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ZinniaCocoaTouchTests.xctest;
+			remoteRef = 4D70434D2463D6A000DACEBC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4D7043502463D6A000DACEBC /* ZinniaCocoa.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ZinniaCocoa.framework;
+			remoteRef = 4D70434F2463D6A000DACEBC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4D7043522463D6A000DACEBC /* ZinniaCocoaTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ZinniaCocoaTests.xctest;
+			remoteRef = 4D7043512463D6A000DACEBC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4D7043542463D6A000DACEBC /* ZinniaCocoaWatch.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ZinniaCocoaWatch.framework;
+			remoteRef = 4D7043532463D6A000DACEBC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D44E2B724629DEB0073192A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D44E2C924629DED0073192A /* LaunchScreen.storyboard in Resources */,
+				4D44E2C624629DED0073192A /* Assets.xcassets in Resources */,
+				4D61D92E2465377B00948D0C /* FlashcardCell.xib in Resources */,
+				4D44E2C424629DEB0073192A /* Main.storyboard in Resources */,
+				4D70437A246405C300DACEBC /* FlashcardTableCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8063DDD671C3C452C30B1F1A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoolJapanese/Pods-CoolJapanese-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoolJapanese/Pods-CoolJapanese-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CoolJapanese/Pods-CoolJapanese-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		939C336661A8404380486960 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoolJapanese-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D44E2B524629DEB0073192A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D704379246405C300DACEBC /* FlashcardTableCell.swift in Sources */,
+				4D70436D2463E7AC00DACEBC /* AddKanjiTextField.swift in Sources */,
+				4D44E31D2462C3B80073192A /* SearchTextField.swift in Sources */,
+				4D44E2C124629DEB0073192A /* HomePageController.swift in Sources */,
+				4D7043662463D97900DACEBC /* HandwritingViewModel.swift in Sources */,
+				4D44E2D92462B7770073192A /* LeftSearchTextFieldView.swift in Sources */,
+				4D7043382463CA3400DACEBC /* MyFlashcardViewController.swift in Sources */,
+				4D7043732463F30300DACEBC /* AddWordButton.swift in Sources */,
+				4DF65BD0246A3659005F23A1 /* FlashcardWordView.swift in Sources */,
+				4D44E31F2462CEF90073192A /* PopupMenu.swift in Sources */,
+				4D44E2BD24629DEB0073192A /* AppDelegate.swift in Sources */,
+				4D7043632463D95D00DACEBC /* DrawableView.swift in Sources */,
+				4D70433D2463CB1700DACEBC /* ColorSet.swift in Sources */,
+				4D70433A2463CA4500DACEBC /* ProcessViewController.swift in Sources */,
+				4D70436F2463EB4700DACEBC /* TextFieldBackground.swift in Sources */,
+				4D7043642463D95D00DACEBC /* HandwritingCollectionViewCell.swift in Sources */,
+				4D7043712463ED9F00DACEBC /* WordView.swift in Sources */,
+				4D61D92D2465377B00948D0C /* FlashcardCell.swift in Sources */,
+				4D7043312463C5CD00DACEBC /* AddKanjiController.swift in Sources */,
+				4D70437E24640DD700DACEBC /* CellLabelView.swift in Sources */,
+				4D70437C246408CD00DACEBC /* Flashcard.swift in Sources */,
+				4D7043752463FDAA00DACEBC /* FlashcardListView.swift in Sources */,
+				4D7043362463CA2600DACEBC /* TopKanjiViewController.swift in Sources */,
+				4DA01A2D24673CAE004D15FE /* IdentForControllers.swift in Sources */,
+				4D44E2BF24629DEB0073192A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4D7043562463D6FE00DACEBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZinniaCocoaTouch;
+			targetProxy = 4D7043552463D6FE00DACEBC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4D44E2C224629DEB0073192A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D44E2C324629DEB0073192A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4D44E2C724629DED0073192A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D44E2C824629DED0073192A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4D44E2CB24629DED0073192A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4D44E2CC24629DED0073192A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4D44E2CE24629DED0073192A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDD305EE2C1FE641C959AF90 /* Pods-CoolJapanese.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 62R3ZN8B42;
+				INFOPLIST_FILE = CoolJapanese/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tan.nd164.CoolJapanese;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Supporting Files/Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4D44E2CF24629DED0073192A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9160E27AFC36959C04D2F7C2 /* Pods-CoolJapanese.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 62R3ZN8B42;
+				INFOPLIST_FILE = CoolJapanese/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tan.nd164.CoolJapanese;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Supporting Files/Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D44E2B424629DEB0073192A /* Build configuration list for PBXProject "CoolJapanese" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D44E2CB24629DED0073192A /* Debug */,
+				4D44E2CC24629DED0073192A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D44E2CD24629DED0073192A /* Build configuration list for PBXNativeTarget "CoolJapanese" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D44E2CE24629DED0073192A /* Debug */,
+				4D44E2CF24629DED0073192A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4D44E2B124629DEB0073192A /* Project object */;
+}
