@@ -49,7 +49,7 @@ class AddKanjiController: UIViewController{
         flashcardTableView.backgroundColor = .white
         flashcardTableView.sectionIndexBackgroundColor = .white
         flashcardTableView.register(UINib(nibName: FlashcardTableCell.FlashcardTableCellID, bundle: nil), forCellReuseIdentifier: FlashcardTableCell.FlashcardTableCellID)
-        flashcardData = [Flashcard(name: "All", check: true),Flashcard(name: "JLPT N3", check: false)]
+        flashcardData = [Flashcard(name: "All", check: true,learned: 10, total: 100,color: "green"),Flashcard(name: "JLPT N3", check: false,learned: 10,total: 100,color: "red")]
     }
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.isHidden = false

@@ -13,6 +13,8 @@ class MyFlashcardViewController: UIViewController{
     
     @IBOutlet weak var flashcardName: UITextField!
     @IBOutlet weak var FlashcardListView: FlashcardListView!
+    var flashcardData : [Flashcard] = []
+    var dataToPass: Flashcard!
     override func viewDidLoad() {
         super.viewDidLoad()
         UIGestureRecognizer().delegate = self
@@ -26,16 +28,25 @@ class MyFlashcardViewController: UIViewController{
     }
     func setupTableView(){
         flashcardTable.register(UINib(nibName: FlashcardCell.FlashcardCellID, bundle: nil), forCellReuseIdentifier: FlashcardCell.FlashcardCellID)
+        flashcardData = [Flashcard(name: "All", check: true,learned: 10, total: 100,color: "green"),Flashcard(name: "JLPT N3", check: false,learned: 70,total: 100,color: "red")]
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == segueIdent.viewFlashcard{
+            let destinationMV = segue.destination as! FlashcardViewController
+            destinationMV.maindata = dataToPass
+        }
     }
 }
 extension MyFlashcardViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return flashcardData.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: FlashcardCell.FlashcardCellID, for: indexPath) as? FlashcardCell
         {
+            cell.flashCard = flashcardData[indexPath.row]
+            cell.delegate = self
             return cell
         }
         return UITableViewCell()
@@ -76,6 +87,7 @@ extension MyFlashcardViewController{
     @objc func DismissView(){
         DismissKeyboard()
         FlashcardListView.isHidden = true
+        flashcardTable.isUserInteractionEnabled = true
     }
     func hideKeyboard(){
         let Tap : UIGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(DismissKeyboard))
@@ -94,6 +106,7 @@ extension MyFlashcardViewController{
     @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
         if FlashcardListView.isHidden {
             FlashcardListView.isHidden = false
+            flashcardTable.isUserInteractionEnabled = false
         }
     }
     
@@ -116,5 +129,13 @@ extension MyFlashcardViewController: UIGestureRecognizerDelegate{
             }
         }
         return true
+    }
+}
+
+
+extension MyFlashcardViewController: FlashcardCellDelegate{
+    func didTapped(_ data: Flashcard) {
+        dataToPass = data
+        performSegue(withIdentifier: segueIdent.viewFlashcard, sender: self)
     }
 }

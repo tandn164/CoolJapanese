@@ -26,6 +26,7 @@ class FlashcardWordView: UIView {
         setUpView()
     }
     func setUpView(){
+        
         layer.cornerRadius = 20
         layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.4).cgColor
         layer.shadowOffset = CGSize(width: 0.0, height: 4.0)

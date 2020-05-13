@@ -10,4 +10,7 @@ import Foundation
 struct Flashcard {
     let name: String
     let check: Bool
+    let learned: Int
+    let total: Int
+    let color: String
 }
