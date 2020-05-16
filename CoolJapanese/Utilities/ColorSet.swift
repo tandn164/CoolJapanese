@@ -7,10 +7,22 @@
 //
 
 import Foundation
-struct Colorset {
+struct BarColor {
     static let AddKanjiBar = "AddKanjiBar"
     static let TopKanjiBar = "TopKanjiBar"
     static let MyFlashcardBar = "MyFlashcardBar"
     static let LearningProcessBar = "LearningProcessBar"
+}
+struct BackgroundColor {
     static let AddKanjiBackground = "AddKanjiBackground"
+}
+struct FlashcardBackground {
+    static let Green = "GreenFlashcard"
+    static let Red = "RedFlashcard"
+}
+struct TextColor {
+    static let Green = "GreenTextColor"
+    static let GreenLight = "GreenLightColor"
+    static let Red = "RedTextColor"
+    static let RedLight = "RedLightColor"
 }
