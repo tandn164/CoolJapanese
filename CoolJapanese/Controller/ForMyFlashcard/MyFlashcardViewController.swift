@@ -19,7 +19,7 @@ class MyFlashcardViewController: UIViewController {
     
     var dataToPass: Flashcard!
     
-    let flashcardData = [Flashcard(name: "All", check: true,learned: 2, total: 5,color: "green",words: [Word(remember: false, content: "あ", note: "first letter of Hiragana"),Word(remember: true, content: "い", note: "second letter of Hiragana"),Word(remember: false, content: "う", note: "third letter of Hiragana"),Word(remember: false, content: "え", note: "fouth letter of Hiragana"),Word(remember: true, content: "お", note: "fifth letter of Hiragana")]),Flashcard(name: "JLPT N3", check: false,learned: 1,total: 2,color: "red",words: [Word(remember: true, content: "い", note: "second letter of Japanese"),Word(remember: false, content: "え", note: "fouth letter of Hiragana")])]
+    let flashcardData = [Flashcard(),Flashcard()]
     
 //  MARK: View Lifecycle
     

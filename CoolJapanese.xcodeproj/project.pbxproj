@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		24D77056ED54770F7DE7953D /* Pods_CoolJapanese.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D7CA78816CC9A3DDFF40AA /* Pods_CoolJapanese.framework */; };
-		4D0C76A8246A5F9900B4018E /* FlashcardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0C76A7246A5F9900B4018E /* FlashcardViewController.swift */; };
+		4D0C76A8246A5F9900B4018E /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0C76A7246A5F9900B4018E /* CardViewController.swift */; };
 		4D44E2BD24629DEB0073192A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D44E2BC24629DEB0073192A /* AppDelegate.swift */; };
 		4D44E2BF24629DEB0073192A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D44E2BE24629DEB0073192A /* SceneDelegate.swift */; };
 		4D44E2C124629DEB0073192A /* HomePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D44E2C024629DEB0073192A /* HomePageController.swift */; };
@@ -18,6 +18,7 @@
 		4D44E2D92462B7770073192A /* LeftSearchTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D44E2D82462B7770073192A /* LeftSearchTextFieldView.swift */; };
 		4D44E31D2462C3B80073192A /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D44E31C2462C3B80073192A /* SearchTextField.swift */; };
 		4D44E31F2462CEF90073192A /* PopupMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D44E31E2462CEF90073192A /* PopupMenu.swift */; };
+		4D56101B246CEB3B00EA5808 /* FlashcardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D56101A246CEB3B00EA5808 /* FlashcardViewController.swift */; };
 		4D61D92D2465377B00948D0C /* FlashcardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D61D92B2465377B00948D0C /* FlashcardCell.swift */; };
 		4D61D92E2465377B00948D0C /* FlashcardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D61D92C2465377B00948D0C /* FlashcardCell.xib */; };
 		4D7043312463C5CD00DACEBC /* AddKanjiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7043302463C5CD00DACEBC /* AddKanjiController.swift */; };
@@ -102,7 +103,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4D0C76A7246A5F9900B4018E /* FlashcardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardViewController.swift; sourceTree = "<group>"; };
+		4D0C76A7246A5F9900B4018E /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		4D0F83E9246BEF7300A78646 /* CoolJapanese.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CoolJapanese.entitlements; sourceTree = "<group>"; };
 		4D44E2B924629DEB0073192A /* CoolJapanese.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolJapanese.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D44E2BC24629DEB0073192A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +116,7 @@
 		4D44E2D82462B7770073192A /* LeftSearchTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSearchTextFieldView.swift; sourceTree = "<group>"; };
 		4D44E31C2462C3B80073192A /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
 		4D44E31E2462CEF90073192A /* PopupMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupMenu.swift; sourceTree = "<group>"; };
+		4D56101A246CEB3B00EA5808 /* FlashcardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardViewController.swift; sourceTree = "<group>"; };
 		4D61D92B2465377B00948D0C /* FlashcardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardCell.swift; sourceTree = "<group>"; };
 		4D61D92C2465377B00948D0C /* FlashcardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlashcardCell.xib; sourceTree = "<group>"; };
 		4D7043302463C5CD00DACEBC /* AddKanjiController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddKanjiController.swift; sourceTree = "<group>"; };
@@ -190,23 +192,14 @@
 			path = CoolJapanese;
 			sourceTree = "<group>";
 		};
-		4D44E2D024629DF60073192A /* SubView */ = {
-			isa = PBXGroup;
-			children = (
-				4D61D9262465375400948D0C /* ForMyFlashcard */,
-				4D70436B2463E73900DACEBC /* ForAddKanji */,
-				4D70436A2463E68500DACEBC /* ForHomePage */,
-			);
-			path = SubView;
-			sourceTree = "<group>";
-		};
 		4D44E2D32462A4950073192A /* View */ = {
 			isa = PBXGroup;
 			children = (
 				4D44E2C724629DED0073192A /* LaunchScreen.storyboard */,
 				4D44E2C224629DEB0073192A /* Main.storyboard */,
-				4D7043692463E35A00DACEBC /* DrawTableView */,
-				4D44E2D024629DF60073192A /* SubView */,
+				4D61D9262465375400948D0C /* ForMyFlashcard */,
+				4D70436B2463E73900DACEBC /* ForAddNewKanji */,
+				4D70436A2463E68500DACEBC /* ForHomePage */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -214,12 +207,12 @@
 		4D44E2D42462A4AB0073192A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				4D7043322463C9F000DACEBC /* TopKanji */,
-				4D70432F2463C58D00DACEBC /* AddNewKanji */,
-				4D7043332463C9F700DACEBC /* MyFlashcard */,
-				4D7043342463CA0100DACEBC /* LearningProcess */,
+				4D7043322463C9F000DACEBC /* ForTopKanji */,
+				4D70432F2463C58D00DACEBC /* ForAddNewKanji */,
+				4D7043332463C9F700DACEBC /* ForMyFlashcard */,
+				4D7043342463CA0100DACEBC /* ForLearningProcess */,
+				4D44E2D62462A50B0073192A /* ForHomePage */,
 				4D44E2D72462A5AB0073192A /* AppLifeCycle */,
-				4D44E2D62462A50B0073192A /* HomePage */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -227,18 +220,18 @@
 		4D44E2D52462A4F10073192A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				4D7043652463D97900DACEBC /* HandwritingViewModel.swift */,
+				4DC9C704246E276300EE761C /* ForAddNewKanji */,
 				4D70437B246408CD00DACEBC /* Flashcard.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		4D44E2D62462A50B0073192A /* HomePage */ = {
+		4D44E2D62462A50B0073192A /* ForHomePage */ = {
 			isa = PBXGroup;
 			children = (
 				4D44E2C024629DEB0073192A /* HomePageController.swift */,
 			);
-			path = HomePage;
+			path = ForHomePage;
 			sourceTree = "<group>";
 		};
 		4D44E2D72462A5AB0073192A /* AppLifeCycle */ = {
@@ -259,37 +252,38 @@
 			path = ForMyFlashcard;
 			sourceTree = "<group>";
 		};
-		4D70432F2463C58D00DACEBC /* AddNewKanji */ = {
+		4D70432F2463C58D00DACEBC /* ForAddNewKanji */ = {
 			isa = PBXGroup;
 			children = (
 				4D7043302463C5CD00DACEBC /* AddKanjiController.swift */,
 			);
-			path = AddNewKanji;
+			path = ForAddNewKanji;
 			sourceTree = "<group>";
 		};
-		4D7043322463C9F000DACEBC /* TopKanji */ = {
+		4D7043322463C9F000DACEBC /* ForTopKanji */ = {
 			isa = PBXGroup;
 			children = (
 				4D7043352463CA2600DACEBC /* TopKanjiViewController.swift */,
 			);
-			path = TopKanji;
+			path = ForTopKanji;
 			sourceTree = "<group>";
 		};
-		4D7043332463C9F700DACEBC /* MyFlashcard */ = {
+		4D7043332463C9F700DACEBC /* ForMyFlashcard */ = {
 			isa = PBXGroup;
 			children = (
 				4D7043372463CA3400DACEBC /* MyFlashcardViewController.swift */,
-				4D0C76A7246A5F9900B4018E /* FlashcardViewController.swift */,
+				4D0C76A7246A5F9900B4018E /* CardViewController.swift */,
+				4D56101A246CEB3B00EA5808 /* FlashcardViewController.swift */,
 			);
-			path = MyFlashcard;
+			path = ForMyFlashcard;
 			sourceTree = "<group>";
 		};
-		4D7043342463CA0100DACEBC /* LearningProcess */ = {
+		4D7043342463CA0100DACEBC /* ForLearningProcess */ = {
 			isa = PBXGroup;
 			children = (
 				4D7043392463CA4500DACEBC /* ProcessViewController.swift */,
 			);
-			path = LearningProcess;
+			path = ForLearningProcess;
 			sourceTree = "<group>";
 		};
 		4D70433B2463CB0600DACEBC /* Utilities */ = {
@@ -348,9 +342,10 @@
 			path = ForHomePage;
 			sourceTree = "<group>";
 		};
-		4D70436B2463E73900DACEBC /* ForAddKanji */ = {
+		4D70436B2463E73900DACEBC /* ForAddNewKanji */ = {
 			isa = PBXGroup;
 			children = (
+				4D7043692463E35A00DACEBC /* DrawTableView */,
 				4D7043762464057500DACEBC /* FlashcardTableCell */,
 				4D70436C2463E7AC00DACEBC /* AddKanjiTextField.swift */,
 				4D70436E2463EB4700DACEBC /* TextFieldBackground.swift */,
@@ -358,7 +353,7 @@
 				4D7043722463F30300DACEBC /* AddWordButton.swift */,
 				4D7043742463FDAA00DACEBC /* FlashcardListView.swift */,
 			);
-			path = ForAddKanji;
+			path = ForAddNewKanji;
 			sourceTree = "<group>";
 		};
 		4D7043762464057500DACEBC /* FlashcardTableCell */ = {
@@ -369,6 +364,14 @@
 				4D70437D24640DD600DACEBC /* CellLabelView.swift */,
 			);
 			path = FlashcardTableCell;
+			sourceTree = "<group>";
+		};
+		4DC9C704246E276300EE761C /* ForAddNewKanji */ = {
+			isa = PBXGroup;
+			children = (
+				4D7043652463D97900DACEBC /* HandwritingViewModel.swift */,
+			);
+			path = ForAddNewKanji;
 			sourceTree = "<group>";
 		};
 		4DF65BCA246A3627005F23A1 /* FlashcardCell */ = {
@@ -571,6 +574,7 @@
 				4D7043642463D95D00DACEBC /* HandwritingCollectionViewCell.swift in Sources */,
 				4D7043712463ED9F00DACEBC /* WordView.swift in Sources */,
 				4D61D92D2465377B00948D0C /* FlashcardCell.swift in Sources */,
+				4D56101B246CEB3B00EA5808 /* FlashcardViewController.swift in Sources */,
 				4D7043312463C5CD00DACEBC /* AddKanjiController.swift in Sources */,
 				4D70437E24640DD700DACEBC /* CellLabelView.swift in Sources */,
 				4D70437C246408CD00DACEBC /* Flashcard.swift in Sources */,
@@ -578,7 +582,7 @@
 				4D7043362463CA2600DACEBC /* TopKanjiViewController.swift in Sources */,
 				4DA01A2D24673CAE004D15FE /* IdentForControllers.swift in Sources */,
 				4D44E2BF24629DEB0073192A /* SceneDelegate.swift in Sources */,
-				4D0C76A8246A5F9900B4018E /* FlashcardViewController.swift in Sources */,
+				4D0C76A8246A5F9900B4018E /* CardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

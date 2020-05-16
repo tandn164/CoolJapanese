@@ -29,10 +29,10 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="gV2-C5-LyE">
-                                <rect key="frame" x="99" y="123" width="177" height="28.5"/>
+                                <rect key="frame" x="99" y="123" width="177" height="29"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="jhk-GY-VC4">
-                                <rect key="frame" x="25" y="199" width="325" height="420"/>
+                                <rect key="frame" x="25" y="199.5" width="325" height="420"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fA4-wm-paf">
                                         <rect key="frame" x="0.0" y="0.0" width="325" height="34"/>
@@ -379,7 +379,7 @@
                                 </constraints>
                                 <state key="normal" image="Group 42"/>
                                 <connections>
-                                    <action selector="DrawButton:" destination="Tjn-lD-rf4" eventType="touchUpInside" id="kM3-At-c3j"/>
+                                    <action selector="drawButtonPressed:" destination="Tjn-lD-rf4" eventType="touchUpInside" id="kM3-At-c3j"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Word:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YGW-bb-tB7">
@@ -455,7 +455,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="addWordPressed:" destination="Tjn-lD-rf4" eventType="touchUpInside" id="qz0-eS-666"/>
+                                    <action selector="addWordButtonPressed:" destination="Tjn-lD-rf4" eventType="touchUpInside" id="qz0-eS-666"/>
                                 </connections>
                             </button>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u40-Ie-pPg" customClass="FlashcardListView" customModule="CoolJapanese" customModuleProvider="target">
@@ -514,7 +514,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="donePressed:" destination="Tjn-lD-rf4" eventType="touchUpInside" id="NaR-Y2-7iF"/>
+                                            <action selector="doneButtonPressed:" destination="Tjn-lD-rf4" eventType="touchUpInside" id="NaR-Y2-7iF"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -574,13 +574,6 @@
                                             </collectionViewCell>
                                         </cells>
                                     </collectionView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jua-zW-zkg" userLabel="Drawable View" customClass="DrawableView" customModule="CoolJapanese">
-                                        <rect key="frame" x="0.0" y="50" width="375" height="375"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="Jua-zW-zkg" secondAttribute="height" multiplier="1:1" id="h2u-mW-7eV"/>
-                                        </constraints>
-                                    </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="fId-KQ-vWH">
                                         <rect key="frame" x="0.0" y="425" width="375" height="50"/>
                                         <subviews>
@@ -590,7 +583,7 @@
                                                 <inset key="contentEdgeInsets" minX="0.0" minY="16" maxX="0.0" maxY="16"/>
                                                 <state key="normal" title="Undo"/>
                                                 <connections>
-                                                    <action selector="undoButton:" destination="Tjn-lD-rf4" eventType="touchUpInside" id="78X-qs-nze"/>
+                                                    <action selector="undoButtonPressed:" destination="Tjn-lD-rf4" eventType="touchUpInside" id="78X-qs-nze"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NpM-LS-hvf" userLabel="Clear Button">
@@ -599,7 +592,7 @@
                                                 <inset key="contentEdgeInsets" minX="0.0" minY="16" maxX="0.0" maxY="16"/>
                                                 <state key="normal" title="Clear"/>
                                                 <connections>
-                                                    <action selector="clearButton:" destination="Tjn-lD-rf4" eventType="touchUpInside" id="I5i-Ov-W1G"/>
+                                                    <action selector="clearButtonPressed:" destination="Tjn-lD-rf4" eventType="touchUpInside" id="I5i-Ov-W1G"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -609,14 +602,10 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="118-sw-NtC"/>
                                     <constraint firstItem="0ap-ot-KUx" firstAttribute="leading" secondItem="La0-k7-5O1" secondAttribute="leading" id="8lV-rl-bMG"/>
-                                    <constraint firstAttribute="trailing" secondItem="Jua-zW-zkg" secondAttribute="trailing" id="Vgq-dr-DFi"/>
                                     <constraint firstAttribute="bottom" secondItem="fId-KQ-vWH" secondAttribute="bottom" id="XJM-7S-8Pk"/>
-                                    <constraint firstItem="fId-KQ-vWH" firstAttribute="top" secondItem="Jua-zW-zkg" secondAttribute="bottom" id="fez-2l-eQt"/>
                                     <constraint firstAttribute="trailing" secondItem="0ap-ot-KUx" secondAttribute="trailing" id="gI2-ik-p36"/>
                                     <constraint firstItem="0ap-ot-KUx" firstAttribute="top" secondItem="La0-k7-5O1" secondAttribute="top" id="jVk-mb-HJG"/>
-                                    <constraint firstItem="Jua-zW-zkg" firstAttribute="leading" secondItem="La0-k7-5O1" secondAttribute="leading" id="ksE-hq-9x8"/>
                                     <constraint firstItem="fId-KQ-vWH" firstAttribute="leading" secondItem="La0-k7-5O1" secondAttribute="leading" id="lhz-R7-jwe"/>
-                                    <constraint firstItem="Jua-zW-zkg" firstAttribute="top" secondItem="0ap-ot-KUx" secondAttribute="bottom" id="omq-8P-QAZ"/>
                                     <constraint firstAttribute="trailing" secondItem="fId-KQ-vWH" secondAttribute="trailing" id="sGx-XA-igC"/>
                                 </constraints>
                             </view>
@@ -654,14 +643,13 @@
                     </view>
                     <navigationItem key="navigationItem" title="Add Kanji" id="L1b-6c-TgA"/>
                     <connections>
-                        <outlet property="DrawableParentView" destination="La0-k7-5O1" id="Pca-b4-mXp"/>
-                        <outlet property="FlashcardListView" destination="u40-Ie-pPg" id="mVH-vm-fVX"/>
                         <outlet property="addWordButton" destination="CVJ-rm-gfF" id="ful-96-oUA"/>
-                        <outlet property="drawableView" destination="Jua-zW-zkg" id="Jcu-0H-xwv"/>
-                        <outlet property="enterWordField" destination="Ulw-xd-eVi" id="hp8-1J-s1E"/>
-                        <outlet property="enterWordNoteField" destination="2UX-69-T4L" id="GIN-Nk-dmw"/>
-                        <outlet property="flashcardTableView" destination="fhX-5v-hzq" id="8v8-A7-hb2"/>
+                        <outlet property="drawableParentView" destination="La0-k7-5O1" id="Pca-b4-mXp"/>
+                        <outlet property="flashcardListView" destination="u40-Ie-pPg" id="mVH-vm-fVX"/>
+                        <outlet property="flashcardTableInsideListView" destination="fhX-5v-hzq" id="8v8-A7-hb2"/>
                         <outlet property="resultCollectionView" destination="0ap-ot-KUx" id="OG8-kS-5Vb"/>
+                        <outlet property="wordField" destination="Ulw-xd-eVi" id="hp8-1J-s1E"/>
+                        <outlet property="wordNoteField" destination="2UX-69-T4L" id="GIN-Nk-dmw"/>
                         <outlet property="wordView" destination="FZu-LM-a34" id="Pex-BU-dEU"/>
                     </connections>
                 </viewController>
@@ -685,18 +673,20 @@
             </objects>
             <point key="canvasLocation" x="2377" y="776"/>
         </scene>
-        <!--Page View Controller-->
+        <!--Flashcard View Controller-->
         <scene sceneID="Gjy-NW-urD">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="xxI-JD-GIs" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="xxI-JD-GIs" customClass="FlashcardViewController" customModule="CoolJapanese" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="xFa-R5-4pD"/>
+                </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vtf-IQ-vcV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="396" y="775"/>
+            <point key="canvasLocation" x="996" y="776"/>
         </scene>
-        <!--Flashcard View Controller-->
+        <!--Card View Controller-->
         <scene sceneID="Sw4-5C-I8o">
             <objects>
-                <viewController id="NV1-V0-C33" customClass="FlashcardViewController" customModule="CoolJapanese" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FlashcardViewController" id="NV1-V0-C33" customClass="CardViewController" customModule="CoolJapanese" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="63N-IR-rhQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -721,7 +711,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gZF-V2-UoF" customClass="FlashcardWordView" customModule="CoolJapanese" customModuleProvider="target">
-                                <rect key="frame" x="40" y="100" width="294" height="374"/>
+                                <rect key="frame" x="40" y="56" width="294" height="418"/>
                                 <subviews>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hxV-2D-AsM">
                                         <rect key="frame" x="33" y="8" width="228" height="358"/>
@@ -735,21 +725,23 @@ Onyomi: シン </string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sTY-7S-vHA">
-                                        <rect key="frame" x="52" y="42" width="191" height="290"/>
+                                        <rect key="frame" x="52" y="42" width="191" height="334"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="PHB-ho-w6R">
-                                        <rect key="frame" x="256" y="8" width="30" height="30"/>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="PHB-ho-w6R">
+                                        <rect key="frame" x="246" y="8" width="40" height="40"/>
                                         <color key="tintColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="gcg-IK-w1n"/>
+                                            <constraint firstAttribute="width" constant="40" id="vj3-J5-Gfo"/>
+                                        </constraints>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="sTY-7S-vHA" secondAttribute="trailing" constant="51" id="50J-kN-79S"/>
-                                    <constraint firstAttribute="bottom" secondItem="PHB-ho-w6R" secondAttribute="bottom" constant="336" id="BYv-xJ-tT1"/>
-                                    <constraint firstItem="PHB-ho-w6R" firstAttribute="leading" secondItem="gZF-V2-UoF" secondAttribute="leading" constant="256" id="Iex-x0-bE5"/>
                                     <constraint firstItem="sTY-7S-vHA" firstAttribute="top" secondItem="gZF-V2-UoF" secondAttribute="top" constant="42" id="N8m-DM-Avu"/>
                                     <constraint firstItem="PHB-ho-w6R" firstAttribute="top" secondItem="gZF-V2-UoF" secondAttribute="top" constant="8" id="Sp2-Pt-uHS"/>
                                     <constraint firstItem="sTY-7S-vHA" firstAttribute="leading" secondItem="gZF-V2-UoF" secondAttribute="leading" constant="52" id="cgP-KS-dpK"/>
@@ -781,7 +773,7 @@ Onyomi: シン </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4FE-fp-6W2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1029.5999999999999" y="774.96251874062978"/>
+            <point key="canvasLocation" x="280.80000000000001" y="781.25937031484261"/>
         </scene>
         <!--My Flashcard-->
         <scene sceneID="zTB-LX-iB5">
@@ -933,7 +925,7 @@ Onyomi: シン </string>
                         <outlet property="FlashcardListView" destination="Hdj-Mx-yY1" id="6Ta-4G-hLO"/>
                         <outlet property="flashcardName" destination="TAn-Oc-LNN" id="8DP-hI-AKO"/>
                         <outlet property="flashcardTable" destination="Toz-SH-cLn" id="ORb-kj-KRH"/>
-                        <segue destination="NV1-V0-C33" kind="show" identifier="ViewFlashcard" id="Wmh-yj-Bk6"/>
+                        <segue destination="xxI-JD-GIs" kind="show" identifier="ViewFlashcard" id="l3i-7n-Go9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eIb-Tq-ZNz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -16,6 +16,12 @@ struct AddKanjiIdent {
     static let hideDrawboard = "hideDrawboard"
     static let exitOnTap = "exitOnTap"
 }
-struct segueIdent {
+struct SegueIdent {
     static let viewFlashcard = "ViewFlashcard"
+}
+struct ViewControllerIdent {
+    static let flashcardViewController = "FlashcardViewController"
+}
+struct CellIdent {
+    static let viewCell = "viewCell"
 }

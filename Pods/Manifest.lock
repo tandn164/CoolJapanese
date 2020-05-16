@@ -1,16 +1,27 @@
 PODS:
+  - Realm (4.4.1):
+    - Realm/Headers (= 4.4.1)
+  - Realm/Headers (4.4.1)
+  - RealmSwift (4.4.1):
+    - Realm (= 4.4.1)
   - UICircularProgressRing (6.5.0)
 
 DEPENDENCIES:
+  - Realm
+  - RealmSwift
   - UICircularProgressRing
 
 SPEC REPOS:
   trunk:
+    - Realm
+    - RealmSwift
     - UICircularProgressRing
 
 SPEC CHECKSUMS:
+  Realm: 4eb04d7487bd43c0581256f40b424eafb711deff
+  RealmSwift: 3eb8924ff7100df5928c7602f71d0fec51e7c9c5
   UICircularProgressRing: e6852e8f88e296cbbbe2720cccb55241acda6708
 
-PODFILE CHECKSUM: 3e143529a76f671946c6fa27c313c501ed83c2e8
+PODFILE CHECKSUM: 9db60547e62712de416ac5f8de6cf94626660fa7
 
 COCOAPODS: 1.9.1

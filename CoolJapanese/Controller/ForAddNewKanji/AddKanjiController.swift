@@ -23,12 +23,11 @@ class AddKanjiController: UIViewController {
     
 //  MARK: Variable
     
-    let flashcardData = [Flashcard(name: "All", check: true,learned: 10, total: 100,color: "green",words: [Word(remember: false, content: "あ", note: "first letter of Japanese")]),Flashcard(name: "JLPT N3", check: false,learned: 70,total: 100,color: "red",words: [Word(remember: true, content: "い", note: "second letter of Japanese")])]
+    let flashcardData = [Flashcard(),Flashcard()]
     private lazy var viewModel: HandwritingViewModel = {
         let vm = HandwritingViewModel(canvas: drawableView)
         return vm
     }()
-    let defaults = UserDefaults.standard
     
 //  MARK: App Lifecycle
     
@@ -118,7 +117,7 @@ extension AddKanjiController: UITableViewDelegate, UITableViewDataSource {
         if let cell = flashcardTableInsideListView.dequeueReusableCell(withIdentifier: FlashcardTableCell.FlashcardTableCellID, for: indexPath) as? FlashcardTableCell
         {
             cell.label.text = flashcardData[indexPath.row].name
-            cell.cellSwitch.isOn = flashcardData[indexPath.row].check
+           // cell.cellSwitch.isOn = flashcardData[indexPath.row].check
             return cell
         }
         return UITableViewCell()
@@ -280,7 +279,6 @@ extension AddKanjiController {
     
     @IBAction func doneButtonPressed(_ sender: UIButton)
     {
-        
         hideListView()
     }
     
